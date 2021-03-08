@@ -50,7 +50,7 @@ def passwordEncrypt(text: str, key: str):
 
 
 class DailyCP:
-    def __init__(self, schoolName="合肥工业大学"):
+    def __init__(self, schoolName="广西民族师范学院"):
         self.key = "ST83=@XV"  # dynamic when app update
         self.session = requests.session()
         self.host = ""
@@ -343,10 +343,10 @@ if __name__ == "__main__":
     #     print("python3 DailyCp.py 学校全名 学号 密码 定位地址 formdb文件夹绝对路径")
     #     exit()
 
-    app = DailyCP("合肥工业大学")
-    if not app.login("2017", "145"):
+    app = DailyCP("广西民族师范学院")
+    if not app.login("2018", "145"):
         exit()
-    app.autoComplete("中国安徽省合肥市蜀山区丹霞路", "./formdb")
+    app.autoComplete("广西壮族自治区崇左市江州区佛子路23号", "./formdb")
 
 
     # i=1
